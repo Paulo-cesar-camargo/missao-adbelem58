@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notícias</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/noticias.css">
+<link rel="stylesheet" href="css/header.css">
+</head>
+<body>
+
+<div id="header"></div>
+
+<section class="banner-noticias">
+    <h1>Notícias</h1>
+    <p>Acompanhe os últimos acontecimentos</p>
+</section>
+
+<section class="container-noticias">
+
+    <!-- Área Admin -->
+        <div class="admin-login" id="adminLogin">
+            <h3>Área Administrativa</h3>
+            <input type="password" id="senhaAdmin" placeholder="Digite a senha">
+            <button onclick="verificarSenha()">Entrar</button>
+        </div>
+<hr>
+        <div class="admin-box" id="adminBox" style="display:none;">
+            <h3>Adicionar / Editar Notícia</h3>
+            <input type="hidden" id="editIndex">
+
+            <input type="text" id="titulo" placeholder="Título da notícia">
+            <textarea id="conteudo" placeholder="Conteúdo da notícia"></textarea>
+            <input type="file" id="imagemUpload">
+            
+            <button onclick="salvarNoticia()">Salvar Notícia</button>
+        </div>
+
+    <!-- Lista -->
+    <div id="listaNoticias" class="grid-noticias"></div>
+
+</section>
+
+<script src="js/include.js"></script>
+<script src="js/script.js"></script>
+<script src="js/noticias.js"></script>
+
+</body>
+</html>
