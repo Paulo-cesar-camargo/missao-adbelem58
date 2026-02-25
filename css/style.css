@@ -71,7 +71,7 @@ body {
     justify-content: center;
 
     background: /*linear-gradient(rgba(47,79,117,0.8), rgba(47,79,117,0.8)),*/
-                url('assets/images/banner1.jpg') center/cover no-repeat;
+                url('../assets/images/banner1.jpg') center/cover no-repeat;
 
     color: white;
     text-align: center;
@@ -185,4 +185,5 @@ body {
 .btn-secondary:hover {
     transform: scale(1.05);
 }
+
 
